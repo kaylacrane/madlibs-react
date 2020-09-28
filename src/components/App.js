@@ -11,6 +11,10 @@ function App() {
   const [formIsValid, setFormIsValid] = useState(false);
 
   useEffect(() => {
+    getData();
+  }, []);
+
+  function getData() {
     fetchText().then((data) => {
       setMadlibs({ ...data });
 
@@ -21,7 +25,7 @@ function App() {
         }))
       );
     });
-  }, []);
+  }
   //save user input
   function handleUserInput(event) {
     const key = event.target.id;
