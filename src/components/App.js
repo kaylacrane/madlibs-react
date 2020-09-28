@@ -59,7 +59,7 @@ function App() {
         />
       ) : (
         <Story
-          userInput={userInput}
+          userInput={Object.values(userInput)}
           story={madlibs.value}
           title={madlibs.title}
         />
