@@ -37,6 +37,6 @@ export const StyledForm = styled.form`
     }
   }
   @media all and (min-width: 1200px) {
-    width: 40vw;
+    width: 30vw;
   }
 `;
