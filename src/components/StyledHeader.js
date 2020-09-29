@@ -3,10 +3,12 @@ import styled from "styled-components";
 export const StyledHeader = styled.header`
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
   text-transform: capitalize;
-  padding: 0 15px 25px;
+  padding-bottom: 15px;
   background-color: lightgrey;
-  font-family: Courier;
+  box-shadow: 0 0 10px grey;
   & > .header-title {
     color: green;
   }

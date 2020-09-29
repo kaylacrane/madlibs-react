@@ -24,7 +24,6 @@ function Form(props) {
                     errorIds.includes(`${index}-${blank}`) ? "show-alert" : ""
                   }`}
                 >
-                  {blank}
                   <input
                     type="text"
                     className="form-input"
@@ -32,8 +31,9 @@ function Form(props) {
                     id={`${index}-${blank}`}
                     value={userInput[blank]}
                   />
+                  {blank}
 
-                  <span className="alert">**</span>
+                  <span className="alert">*</span>
                 </label>
               );
             })

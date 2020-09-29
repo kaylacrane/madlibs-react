@@ -1,8 +1,9 @@
 import React from "react";
+import { StyledStory } from "./StyledStory";
 
 function Story(props) {
   console.log(props);
-  const { title, story, userInput } = props;
+  const { title, story, userInput, newStory } = props;
   let fullStory;
 
   fullStory = story.map((element, index) => {
@@ -15,10 +16,13 @@ function Story(props) {
   });
 
   return (
-    <div className="story-page">
+    <StyledStory>
       <h2 className="story-title">{title}</h2>
       <p>{fullStory ? fullStory : "story"}</p>
-    </div>
+      <button className="new-story-button" onClick={newStory}>
+        Make another story
+      </button>
+    </StyledStory>
   );
 }
 

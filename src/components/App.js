@@ -33,6 +33,7 @@ function App() {
     setUserInput({ ...userInput, [key]: value });
   }
 
+  //submit user input
   function formSubmitHandler(event) {
     event.preventDefault();
     //show missing data alerts
@@ -48,6 +49,12 @@ function App() {
     if (newList.length === 0) {
       setFormIsValid(true);
     }
+  }
+
+  //generate new story
+  function newStory() {
+    setFormIsValid(false);
+    getData();
   }
 
   return (
@@ -66,6 +73,7 @@ function App() {
           userInput={Object.values(userInput)}
           story={madlibs.value}
           title={madlibs.title}
+          newStory={newStory}
         />
       )}
     </React.Fragment>
