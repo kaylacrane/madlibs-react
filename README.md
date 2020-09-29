@@ -10,3 +10,6 @@ Skills/tools/technologies included in this project:
 - Form validation
 - Controlled components
 - Styled components
+- API calls using fetch
+
+The API I used is [Madlibz API](http://madlibz.herokuapp.com/api). At the previous link you can also find information on how to add your own stories to the API.
